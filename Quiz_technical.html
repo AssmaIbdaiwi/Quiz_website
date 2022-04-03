@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz website</title>
+    <link rel="stylesheet" href="Quiz_technical.css">
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Courgette&family=Montserrat+Alternates:wght@100&family=Sansita+Swashed:wght@300&family=Sofia&display=swap"
+        rel="stylesheet">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="cont" id="cont">
+        <button class="buttonload" onclick="btnload()" id="btnload">
+           Start <br/> your test
+          </button>  
+    </div>
+    <div class="bigcont" id="bigcont">
+        <div class="cir1">
+        <div class="fcircle1" id="fcircle1"> </div>
+        <div class="scircle1" id="scircle1"> </div>
+    </div>
+    <div class="border1" id="border1">
+        <div class="fcircle2" id="fcircle2"> </div>
+        <div class="scircle2" id="scircle2"> </div>
+        <p class="logo" id="logo">Logo</p>
+
+        <div class="dark" onclick="sun">
+            <i  class="fa fa-moon-o" id="moon" style="font-size: 36px"></i>
+            <i class="material-icons" id="sun" style="font-size: 36px">wb_sunny</i>
+        </div>
+
+        <div>
+            <p id="Q" class="Q">    Q 1/10</p>
+        </div>
+        <div class="line" id="line">
+            <p id="Question" class="Question"> What is the correct syntax for referring to an external script called
+                "xxx.js"?
+
+            </p>
+        </div>
+        <div class="btn">
+            <button  class="btn1" id="btn1" onclick="btn1()"> script src="xxx.js" &#62;</button> 
+            <button  class="btn1" id="btn2"onclick="btn2()">&#60; script href="xxx.js" &#62;</button><br />
+            <button  class="btn2"id="btn3"onclick="btn3()">&#60; script name="xxx.js"</button>
+            <button class="btn2"id="btn4"onclick="btn4()">&#60; script value="xxx.js"</button>
+        </div>
+
+     <a  href="#" class="previous" id="pre">&laquo; Previous</a> 
+
+     <a onclick="nxt()" id="nxt" href="#" class="next" >Next &raquo;</a>
+    <a  href="#" class="next" id="Finish">Finish &raquo;</a>
+    </div>
+        <script src="Quiz_technical.js"></script>
+        <script src="balls.js" id="bbls"></script>
+</body>
+
+</html>
