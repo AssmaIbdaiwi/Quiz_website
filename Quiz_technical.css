@@ -314,6 +314,18 @@ font-weight: bold;
 
 
   /* ******************************responsive************************************* */
+  @media screen and (max-width:1282px){
+    .btn{
+      left:25%
+    }
+    .btn1{
+      width: 200px;
+    }
+    .btn2{
+     width: 200px;
+     
+    }
+  }
   @media screen and (max-width:1024px){
 
     .fcircle1{
@@ -362,6 +374,18 @@ font-weight: bold;
  #sun{
   left:90%; 
  }
+  }
+  @media screen and (max-width:1282px){
+    .btn{
+      left:20%
+    }
+
+  }
+  @media screen and (max-width:1282px){
+    .btn{
+      left:15%
+    }
+
   }
   @media screen and (max-width:890px){
     .fcircle1{

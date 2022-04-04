@@ -105,20 +105,7 @@ display:none;
     .border1.active .wtxt{
       color :#E5E5E5
     }
-   .cursor{
-     z-index: 999;
-     position: fixed;
-     transition: .1s;
-     background-image: url(pic/8f362a5f-31df-4cd1-af2e-b3c2bac17047-removebg-preview.png);
-     background-repeat: no-repeat;
-     background-size: 80px ;
-     width: 90px;
-     height: 90px;
-     pointer-events: none;
-     transform: translate(-50%, -50%);
-     display: none;
-     animation: cursor 5s infinite ;
-   }
+
 .dropdown1 {
     width: 700px;
     height: 70px;
@@ -502,6 +489,11 @@ top:67%;
   }
 
 }
+@media screen and (max-width:882px){
+  .wtxt {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width:769px){
   .fcircle1{
     clip-path: none;
@@ -547,12 +539,21 @@ left:77%}
 }
 
 }
-@media screen and (max-width:714px){
+@media screen and (max-width:781px){
 .wtxt{
   font-size: 18px;
 }
+.yourname{
+  font-size: 40px;
+  top:0;
 }
-
+}
+@media screen and (max-width:625px){
+  .wtxt{
+   width: 250px;
+   top:80px;
+  }
+}
 @media screen and (max-width:625px){
   .englishtxt {
     font-size: 10px;
@@ -564,7 +565,32 @@ left:77%}
   .IQtxt {
     font-size: 10px; 
   }
-
+  .startbtne{
+    height: 40px;
+    top:90%;
+    left: 65%;
+    width: 30%;
+    font-size: 80%;
+  }
+  .startbtniq{
+    height: 40px;
+    top:90%;
+    left: 65%;
+    width: 30%;
+    font-size: 80%;
+  }
+  .startbtntec{
+    height: 40px;
+    top:90%;
+    left: 65%;
+    width: 30%;
+    font-size: 80%;
+  }}
+  @media screen and (max-width:542px){
+    .yourname{
+      font-size: 30px;
+    }
+  }
 @media screen and (max-width:426px){
   .fcircle1{
     clip-path: none;
@@ -593,6 +619,7 @@ left:77%}
 .wtxt {
   font-size: 15px;
   width: 200px;
+  top:100px
 }
 #sun{
   left: 85%;

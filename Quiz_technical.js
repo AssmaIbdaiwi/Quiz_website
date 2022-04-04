@@ -283,5 +283,5 @@ function btn4() {
   document.getElementById('btn3').style.background = '#0d83ae4d';
 
   }
-  ///////////////////local storage////////////////////////
+  
 
