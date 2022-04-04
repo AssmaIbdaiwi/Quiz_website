@@ -25,49 +25,18 @@ body {
 #sun.active:nth-child(2){
   display:none;
 }
-.cont{
-  position: absolute;
-  background-color: #023047;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.cont :hover {
-  box-shadow: 4px 3px 8px 1px #98C1D9;
-}
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
-  display: block;
-}
-.buttonload{
-  position: absolute;
-  left:40% ;
-  top:30%;
-  width:20%;
-  height: 20%;
-  border: #EC8757;
-  border-radius: 15px;
-  background-color: #EC8757;
-  color:#023047 ;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 200%;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 4px 3px 8px 1px #ccc;
-  display: block;
-}
+
+
 .bigcont{
   position: absolute;
   width: 100%;
   height: 100%;
-  display: none;
+  
 }
 /* //////////////////////////////////////////////// */
 
 .border1 {
-
+  background-color: #98C1D9;
     border-radius: 10px;
     position: absolute;
     top: 25%;
@@ -138,37 +107,7 @@ transition: 1s;
 .cir1.active .scircle1{
   background-color: var(--main-color4);
 }
-.cir1.active .scircle2{
-  background-color: var(--main-color4);
-}
 
-.fcircle2 {
-    background-color: #98C1D9;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(380px at right 300px);
-
-}
-.border1.active .fcircle2{
-  display:none;
-}
-
-.scircle2 {
-    background-color: #98C1D9;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: circle(390px at left 50px);
-
-}
-.border1.active .scircle2{
-  display:none;
-}
 .Question{
 
     color: #023047;
@@ -310,8 +249,6 @@ font-weight: bold;
   .border1.active .next{
     background-color: #ec8657e2;
   }
-
-
 
   /* ******************************responsive************************************* */
   @media screen and (max-width:1282px){

@@ -2,12 +2,6 @@ var choice = 0;
 
 document.getElementById('Finish').style.display = 'none';
 
-function btnload() {
-
-  document.getElementById('bigcont').style.display = 'block';
-  document.getElementById('cont').style.display = 'none';
-}
-
 
 //////**********************sun moon**************************** */
 

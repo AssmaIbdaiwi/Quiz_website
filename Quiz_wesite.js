@@ -10,18 +10,24 @@
           document.getElementById('IQtxt').style.display='none';
           document.getElementById('technicaltxt').style.display='none';
           document.getElementById('startbtne').style.display='block';
+          document.getElementById('startbtiq').style.display='none'; // add
+          document.getElementById('startbtntec').style.display='none' ///add
 
         } else if (this.value === 'iq') {
             document.getElementById('IQtxt').style.display='block';
             document.getElementById('englishtxt').style.display='none';
             document.getElementById('technicaltxt').style.display='none';
             document.getElementById('startbtiq').style.display='block';
+            document.getElementById('startbtne').style.display='none'; ////add
+            document.getElementById('startbtntec').style.display='none' /// add
 
         } else if (this.value === 'tec') {
             document.getElementById('technicaltxt').style.display='block';
             document.getElementById('englishtxt').style.display='none';
             document.getElementById('IQtxt').style.display='none';
             document.getElementById('startbtntec').style.display='block'
+            document.getElementById('startbtne').style.display='none';    ////add
+            document.getElementById('startbtiq').style.display='none'     ///add
 
         }else{  
         document.getElementById('IQtxt').style.display='none';
