@@ -32,7 +32,8 @@
     <div class="border1" id="border1">
         <div class="fcircle2" id="fcircle2"> </div>
         <div class="scircle2" id="scircle2"> </div>
-        <p class="logo" id="logo">Logo</p>
+        <img id="logo" class="logo" src="pic/WhatsApp_Image_2022-04-03_at_17.39.25-removebg-preview.png">
+        <img id="logo1" class="logo1" src="pic/WhatsApp_Image_2022-04-03_at_17.42.07-removebg-preview.png">
 
         <div class="dark" onclick="sun">
             <i  class="fa fa-moon-o" id="moon" style="font-size: 36px"></i>
@@ -40,28 +41,27 @@
         </div>
 
         <div>
-            <p id="Q" class="Q">    Q 1/10</p>
+            <p id="Q" class="Q"> Q 1/10</p>
         </div>
         <div class="line" id="line">
-            <p id="Question" class="Question"> What is the correct syntax for referring to an external script called
-                "xxx.js"?
+            <p id="Question" class="Question">How to insert a comment that has more than one line?
 
             </p>
         </div>
         <div class="btn">
-            <button  class="btn1" id="btn1" onclick="btn1()"> script src="xxx.js" &#62;</button> 
-            <button  class="btn1" id="btn2"onclick="btn2()">&#60; script href="xxx.js" &#62;</button><br />
-            <button  class="btn2"id="btn3"onclick="btn3()">&#60; script name="xxx.js"</button>
-            <button class="btn2"id="btn4"onclick="btn4()">&#60; script value="xxx.js"</button>
+            <button  class="btn1" id="btn1" onclick="btn1()"> //more than one line comment// </button> 
+            <button  class="btn1" id="btn2"onclick="btn2()">/*more than one line comment*/</button><br />
+            <button  class="btn2"id="btn3"onclick="btn3()">/---more than one line comment---/</button>
+            <button class="btn2"id="btn4"onclick="btn4()">/!-more than one line comment-!/</button>
         </div>
-
+<div>
      <a  href="#" class="previous" id="pre">&laquo; Previous</a> 
 
      <a onclick="nxt()" id="nxt" href="#" class="next" >Next &raquo;</a>
     <a  href="#" class="next" id="Finish">Finish &raquo;</a>
     </div>
         <script src="Quiz_technical.js"></script>
-        <script src="balls.js" id="bbls"></script>
+      <div id="bbb"> <script src="balls.js" id="bbls"></script></div> 
 </body>
 
 </html>

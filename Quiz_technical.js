@@ -1,4 +1,4 @@
-
+var choice = 0;
 
 document.getElementById('Finish').style.display = 'none';
 
@@ -6,8 +6,6 @@ function btnload() {
 
   document.getElementById('bigcont').style.display = 'block';
   document.getElementById('cont').style.display = 'none';
-  document.getElementById('bobbles').style.display = 'none';
-  document.getElementById('bbls').style.display = 'none';
 }
 
 
@@ -25,179 +23,235 @@ document.querySelector(".dark").onclick = function icon( ) {
 
 }
 
+document.getElementById("moon").onclick = function icon(){
+  document.getElementById('logo').style.display='block';
+  document.getElementById('logo1').style.display='none';
+}
 
-
+document.getElementById("sun").onclick = function icon(){
+  document.getElementById('logo').style.display='none';
+  document.getElementById('logo1').style.display='block';
+}
 
 // *********************array of object********
 
-const Quiz = [{
-  "Q": "What is the correct syntax for referring to an external script called 'xxx.js'?",
-  "A1": "< script src='xxx.js'>", //correct
-  "A2": "< script href='xxx.js'>",
-  "A3": "< script name='xxx.js'>",
-  "A4": "< script value='xxx.js'>",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
 
 
-{
-  "Q": "How do you write 'Hello World' in an alert box?",
-  "A1": "msg('Hello World');",
-  "A2": "msgBox('Hello World');",
-  "A3": "alertBox('Hello World');",
-  "A4": "alert('Hello World');",  //correct
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-
-},
-
-{
-  "Q": "How do you create a function in JavaScript?",
-  "A1": "function myFunction()",  //correct
-  "A2": "function: myFunction()",
-  "A3": "function= myFunction()",
-  "A4": "function myFunction{}",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": " How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
-  "A1": "if(i < > 5)",
-  "A2": "if i=! 5 then",
-  "A3": "if i <> 5",
-  "A4": "if(i!=5)",  //correct
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": "What is the correct HTML for adding a background color?",
-  "A1": "< cody bg='yellow' >",
-  "A2": "< background>; yellow </background >", 
-  "A3": "< body style ='background-color:yeloow;' >",  //correct
-  "A4": "< background:yellow >",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": "How can you make a numbered list?",
-  "A1": "< ul >",
-  "A2": "< dl >",
-  "A3": "< ol >", ////correct
-  "A4": "< list >",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": "What is the correct HTML for making a checkbox?",
-  "A1": "< input type='checkbox' >",  //correct
-  "A2": "< checkbox >",
-  "A3": "< input type='check'>",
-  "A4": "< check >",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-
-{
-  "Q": "Where in an HTML document is the correct place to refer to an external style sheet?",
-  "A1": "In the body",
-  "A2": "At the end of the document",
-  "A3": "In the < head > section", //correct
-  "A4": "In the style tag",
-  "Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": "How do you select elements with class name 'test'?",
-  "A1": "#test",
-  "A2": ".test",   //correct
-  "A3": "test",
-  "A4": "*test",
-  " Yes": " Correct answer",
-  "No": " Wrong answer "
-},
-{
-  "Q": "What does CSS stand for?",
-  "A1": "Cascading Style Sheet",  //correct
-  "A2": "Creative Style Sheets",
-  "A3": "Colorful Style Sheets",
-  "A4": "Computer Style Sheets",
-  "Yes": "Correct answer",
-  "No": " Wrong answer "
+qustions = [
+  {
+      "qustion" : "How to insert a comment that has more than one line?" ,
+      "choices" : [
+          "//more than one line comment//",
+          "/*more than one line comment*/",
+          "/---more than one line comment---/",
+          "/!-more than one line comment-!/"
+      ] ,
+      "answeres" : [
+          "",
+          "true",
+          "false",
+          "false"
+      ],
+      "choice" : "",
+  },{
+      "qustion" : "How do you write 'Hello World' in an alert box?" ,
+      "choices" : [
+          "msg('Hello World');",
+          "msgBox('Hello World');",
+          "alertBox('Hello World');",
+          "alert('Hello World');"
+      ] ,
+      "answeres" : [
+          "false",
+          "false",
+          "false",
+          "true"
+      ],
+      "choice" : "",
+  },{
+      "qustion" : "How do you create a function in JavaScript?" ,
+      "choices" : [
+          "function myFunction()",
+          "function: myFunction()",
+          "function= myFunction()",
+          "function myFunction{}"
+      ] ,
+      "answeres" : [
+          "true",
+          "false",
+          "false",
+          "false"
+      ],
+      "choice" : "",
+  } , 
+  {
+      "qustion" : "How to write an IF statement for executing some code if 'i' is NOT equal to 5?" ,
+      "choices" : [
+          "if(i < > 5)",
+          "if i=! 5 then",
+          "if i <> 5",
+          "if(i!=5)"
+      ] ,
+      "answeres" : [
+          "false",
+          "false",
+          "false",
+          "true"
+      ],
+      "choice" : "",
+  },{
+      "qustion" : "What is the correct HTML for adding a background color?" ,
+      "choices" : [
+          "< cody bg='yellow' >",
+          "< background>; yellow </background >",
+          "< body style ='background-color:yeloow;' >",
+          "< background:yellow >"
+      ] ,
+      "answeres" : [
+          "false",
+          "false",
+          "true",
+          "false"
+      ],
+      "choice" : "",
+  },{
+    "qustion" : "How can you make a numbered list?" ,
+    "choices" : [
+        "< ul >",
+        "< dl >",
+        "< ol >",
+        "< list >"
+    ] ,
+    "answeres" : [
+        "false",
+        "false",
+        "true",
+        "false"
+    ],
+    "choice" : "",
+},{
+  "qustion" : "What is the correct HTML for making a checkbox?" ,
+  "choices" : [
+      "< input type='checkbox' >",
+      "< checkbox >",
+      "< input type='check' >",
+      "< check >"
+  ] ,
+  "answeres" : [
+      "true",
+      "false",
+      "false",
+      "false"
+  ],
+  "choice" : "",
+},{
+  "qustion" : "Where in an HTML document is the correct place to refer to an external style sheet?" ,
+  "choices" : [
+      "In the body",
+      "At the end of the document",
+      "In the < head > section",
+      "In the style tag"
+  ] ,
+  "answeres" : [
+      "false",
+      "false",
+      "true",
+      "false"
+  ],
+  "choice" : "",
+},{
+  "qustion" : "How do you select elements with class name 'test'?" ,
+  "choices" : [
+      "#test",
+      ".test",
+      "test",
+      "*test"
+  ] ,
+  "answeres" : [
+      "false",
+      "true",
+      "false",
+      "false"
+  ],
+  "choice" : "",
+},{
+  "qustion" : "What does CSS stand for?" ,
+  "choices" : [
+      "Cascading Style Sheet",
+      "Creative Style Sheets",
+      "Colorful Style Sheets",
+      "Computer Style Sheets"
+  ] ,
+  "answeres" : [
+      "true",
+      "false",
+      "false",
+      "false"
+  ],
+  "choice" : "",
 }
 ]
 
 
-
-
-// ************************   end arrey of obj*********************************
-
-
-
-
-// ****************************stsrt btn********************************
-function btnload() {
-
-  document.getElementById('bigcont').style.display = 'block';
-  document.getElementById('cont').style.display = 'none';
-  document.getElementById('bbls').style.display = 'none';
-}
-
-
-///////////////////////////////next button//////////////////////////////////////////////
-
-
-
-let val = 0;
-document.getElementById("nxt").onclick = function nxt() {
-  val++;
-  let m=val+1
-if(val<Quiz.length){
-
-
-
-
-  document.getElementById('Q').innerHTML = 'Q ' + m + '/10';
-  document.getElementById('Question').innerHTML = Quiz[val].Q
-  document.getElementById('btn1').innerHTML = Quiz[val].A1
-  document.getElementById('btn2').innerHTML = Quiz[val].A2
-  document.getElementById('btn3').innerHTML = Quiz[val].A3
-  document.getElementById('btn4').innerHTML=Quiz[val].A4
-} else{
-document.getElementById('Finish').style.display = 'block';
-document.getElementById('nxt').style.display = 'none';
-
-}
-
-
-}
-//*******************previus btn********************************* */
-
-document.getElementById("pre").onclick = function nxt() {
-  val--;
-  let m=val+1
-if(val<Quiz.length && val >=0){
-
-  document.getElementById('Q').innerHTML = 'Q ' + m + '/10';
-  document.getElementById('Question').innerHTML = Quiz[val].Q
-  document.getElementById('btn1').innerHTML = Quiz[val].A1
-  document.getElementById('btn2').innerHTML = Quiz[val].A2
-  document.getElementById('btn3').innerHTML = Quiz[val].A3
-  document.getElementById('btn4').innerHTML=Quiz[val].A4
-}else{
-  document.getElementById('Finish').style.display = 'none';
-  document.getElementById('nxt').style.display = 'block';
+var num = 0;
+counter = num + 1;
+btn = document.getElementById("nxt").addEventListener("click",function(){
+  if(choice == 1){
+    qustions[num].choice = document.getElementById("btn1").innerHTML;
+    myJSON = JSON.stringify(qustions[num]);
+    localStorage.setItem("qustions" + counter, myJSON);
+  }else if( choice == 2){
+    qustions[num].choice = document.getElementById("btn2").innerHTML;
+    myJSON = JSON.stringify(qustions[num]);
+    localStorage.setItem("qustions" + counter, myJSON);
+  }else if(choice == 3){
+    qustions[num].choice = document.getElementById("btn3").innerHTML;
+    myJSON = JSON.stringify(qustions[num]);
+    localStorage.setItem("qustions" + counter, myJSON);
+  }else if(choice == 4){
+    qustions[num].choice = document.getElementById("btn4").innerHTML;
+    myJSON = JSON.stringify(qustions[num]);
+    localStorage.setItem("qustions" + counter, myJSON);
   }
-  
-  }
+  num++;
+  counter++;
+
+  document.getElementById("Question").innerHTML = qustions[num].qustion;
+  document.getElementById("btn1").innerHTML = qustions[num].choices[0];
+  document.getElementById("btn2").innerHTML = qustions[num].choices[1];
+  document.getElementById("btn3").innerHTML = qustions[num].choices[2];
+  document.getElementById("btn4").innerHTML = qustions[num].choices[3];
+  document.getElementById("Q").innerHTML = "Q" + counter + "/10";
+})
+
+
+btn = document.getElementById("pre").addEventListener("click",function(){
+
+counter--;
+num--;
+console.log(num)
+  document.getElementById("Question").innerHTML = qustions[num].qustion;
+document.getElementById("btn1").innerHTML = qustions[num].choices[0];
+document.getElementById("btn2").innerHTML = qustions[num].choices[1];
+document.getElementById("btn3").innerHTML = qustions[num].choices[2];
+document.getElementById("btn4").innerHTML = qustions[num].choices[3];
+document.getElementById("Q").innerHTML = "Q" + counter + "/10";
+})
+
+
+console.log(qustions[0].choices[3]);
+console.log(qustions[0].choices[2]);
+console.log(qustions[0].choices[1]);
+console.log(qustions[0].choices[0]);
+
+
 
 
 
 //******************************buttons*****************
 
 function btn1() {
-
-
+  choice = 1;
   document.getElementById('btn1').style.background = '#ec8657b9';
   document.getElementById('btn2').style.background = '#0d83ae4d';
   document.getElementById('btn3').style.background = '#0d83ae4d';
@@ -207,12 +261,14 @@ function btn1() {
 }
 
  function btn2() {
+  choice = 2;
   document.getElementById('btn2').style.background = '#ec8657b9';
   document.getElementById('btn1').style.background = '#0d83ae4d';
   document.getElementById('btn3').style.background = '#0d83ae4d';
   document.getElementById('btn4').style.background = '#0d83ae4d';
 }
 function btn3() {
+  choice = 3;
   document.getElementById('btn3').style.background = '#ec8657b9';
   document.getElementById('btn1').style.background = '#0d83ae4d';
   document.getElementById('btn2').style.background = '#0d83ae4d';
@@ -220,6 +276,7 @@ function btn3() {
 
 }
 function btn4() {
+  choice = 4;
   document.getElementById('btn4').style.background = '#ec8657b9';
   document.getElementById('btn1').style.background = '#0d83ae4d';
   document.getElementById('btn2').style.background = '#0d83ae4d';
@@ -228,73 +285,3 @@ function btn4() {
   }
   ///////////////////local storage////////////////////////
 
-
-  localStorage.setItem ('Question1',Quiz[0].Q) ;
-  localStorage.setItem ('Q1 Answer1',Quiz[0].A1);
-  localStorage.setItem ('Q1 Answer2',Quiz[0].A2);
-  localStorage.setItem ('Q1 Answer3', Quiz[0].A3);
-  localStorage.setItem ('Q1 Answer4',Quiz[0].A4);
-  localStorage.setItem ('Q1 Correct answer', Quiz[0].A1);
-  //
-  localStorage.setItem ('Question2',Quiz[1].Q) ;
-  localStorage.setItem ('Q2 Answer1',Quiz[1].A1);
-  localStorage.setItem ('Q2 Answer2',Quiz[1].A2);
-  localStorage.setItem ('Q2 Answer3', Quiz[1].A3);
-  localStorage.setItem ('Q2 Answer4',Quiz[1].A4);
-  localStorage.setItem ('Q2 Correct answer', Quiz[1].A4);
-//
-localStorage.setItem ('Question3',Quiz[2].Q) ;
-localStorage.setItem ('Q3 Answer1',Quiz[2].A1);
-localStorage.setItem ('Q3 Answer2',Quiz[2].A2);
-localStorage.setItem ('Q3 Answer3', Quiz[2].A3);
-localStorage.setItem ('Q3 Answer4',Quiz[2].A4);
-localStorage.setItem ('Q3 Correct answer', Quiz[2].A1);
-//
-localStorage.setItem ('Question4',Quiz[3].Q) ;
-localStorage.setItem ('Q4 Answer1',Quiz[3].A1);
-localStorage.setItem ('Q4 Answer2',Quiz[3].A2);
-localStorage.setItem ('Q4 Answer3', Quiz[3].A3);
-localStorage.setItem ('Q4 Answer4',Quiz[3].A4); 
-localStorage.setItem ('Q4 Correct answer', Quiz[3].A4);
-//
-localStorage.setItem ('Question5',Quiz[4].Q) ;
-localStorage.setItem ('Q5 Answer1',Quiz[4].A1);
-localStorage.setItem ('Q5 Answer2',Quiz[4].A2);
-localStorage.setItem ('Q5 Answer3', Quiz[4].A3);
-localStorage.setItem ('Q5 Answer4',Quiz[4].A4);
-localStorage.setItem ('Q5 Correct answer', Quiz[4].A3);
-//
-localStorage.setItem ('Question6',Quiz[5].Q) ;
-localStorage.setItem ('Q6 Answer1',Quiz[5].A1);
-localStorage.setItem ('Q6 Answer2',Quiz[5].A2);
-localStorage.setItem ('Q6 Answer3', Quiz[5].A3);
-localStorage.setItem ('Q6 Answer4',Quiz[5].A4);
-localStorage.setItem ('Q6 Correct answer', Quiz[5].A3);
-//
-localStorage.setItem ('Question7',Quiz[6].Q) ;
-localStorage.setItem ('Q7 Answer1',Quiz[6].A1);
-localStorage.setItem ('Q7 Answer2',Quiz[6].A2);
-localStorage.setItem ('Q7 Answer3', Quiz[6].A3);
-localStorage.setItem ('Q7 Answer4',Quiz[6].A4);
-localStorage.setItem ('Q7 Correct answer', Quiz[6].A1);
-//
-localStorage.setItem ('Question8',Quiz[7].Q) ;
-localStorage.setItem ('Q8 Answer1',Quiz[7].A1);
-localStorage.setItem ('Q8 Answer2',Quiz[7].A2);
-localStorage.setItem ('Q8 Answer3', Quiz[7].A3);
-localStorage.setItem ('Q8 Answer4',Quiz[7].A4);
-localStorage.setItem ('Q8 Correct answer', Quiz[7].A3);
-//
-localStorage.setItem ('Question9',Quiz[8].Q) ;
-localStorage.setItem ('Q9 Answer1',Quiz[8].A1);
-localStorage.setItem ('Q9 Answer2',Quiz[8].A2);
-localStorage.setItem ('Q9 Answer3', Quiz[8].A3);
-localStorage.setItem ('Q9 Answer4',Quiz[8].A4);
-localStorage.setItem ('Q9 Correct answer', Quiz[8].A2);
-//
-localStorage.setItem ('Question10',Quiz[9].Q) ;
-localStorage.setItem ('Q10 Answer1',Quiz[9].A1);
-localStorage.setItem ('Q10 Answer2',Quiz[9].A2);
-localStorage.setItem ('Q10 Answer3', Quiz[9].A3);
-localStorage.setItem ('Q10 Answer4',Quiz[9].A4);
-localStorage.setItem ('Q10 Correct answer', Quiz[9].A1);

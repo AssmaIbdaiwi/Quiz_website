@@ -37,48 +37,35 @@
 
 
 
-
+      document.querySelector(".dark").onclick = function icon( ) {
+        let moon = document.querySelector('#moon');
+        let sun = document.querySelector('#sun');
+        let b1 = document.querySelector('.border1');
+        let b2 = document.querySelector('.cir1')
+        let t=document.querySelector('.txt1')
+        let s=document.querySelector('form')
+        b2.classList.toggle('active');
+        b1.classList.toggle('active');
+        moon.classList.toggle('active');
+        sun.classList.toggle('active');
+        t.classList.toggle('active');
+        s.classList.toggle('active')
+      }
 
 
 
 
       document.getElementById("moon").onclick = function icon(){
+        document.getElementById('logo').style.display='block';
+        document.getElementById('logo1').style.display='none';
 
-        document.getElementById('sun').style.display='block';
-        document.getElementById('moon').style.display='none';
-  document.getElementById('fcircle2').style.display = 'block';
-  document.getElementById('scircle2').style.display = 'block';
-  document.getElementById('border1').style.background = 'none';
-  document.getElementById('fcircle1').style.background = '#023047'
-  document.getElementById('scircle1').style.background = '#023047'
-  document.getElementById('wtxt').style.color = '#023047';
-  document.getElementById('dropdown1').style.background = '#0D83AE'
-  document.getElementById('englishtxt').style.color = '#023047';
-  document.getElementById('IQtxt').style.color = '#023047';
-  document.getElementById('technicaltxt').style.color = '#023047'
-  document.getElementById('startbtne').style.background = '#0D83AE' ;
-  document.getElementById('startbtniq').style.background = '#0D83AE' ;
-  document.getElementById('startbtntec').style.background = '#0D83AE'
+
 }
 document.getElementById("sun").onclick = function icon(){
-  
-        document.getElementById('sun').style.display='none';
-        document.getElementById('moon').style.display='block';
-        document.getElementById('fcircle2').style.display = 'none';
-        document.getElementById('scircle2').style.display = 'none';
-        document.getElementById('border1').style.background = '#023047';
-        document.getElementById('fcircle1').style.background = '#EC8757';
-        document.getElementById('scircle1').style.background = '#EC8757';
-        document.getElementById('wtxt').style.color = '#E5E5E5';
-        document.getElementById('dropdown1').style.background = '#EC8757';
-        document.getElementById('englishtxt').style.color = '#E5E5E5';
-        document.getElementById('IQtxt').style.color = '#E5E5E5';
-        document.getElementById('technicaltxt').style.color = '#E5E5E5';
-        document.getElementById('startbtne').style.background = '#EC8757' ;
-        document.getElementById('startbtiq').style.background = '#EC8757' ;
-        document.getElementById('startbtntec').style.background = '#EC8757' ;
+  document.getElementById('logo').style.display='none';
+  document.getElementById('logo1').style.display='block';
+
+
 }
 
-
-  
 

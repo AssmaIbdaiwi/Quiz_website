@@ -85,8 +85,16 @@ transition: 1s;
 .logo {
     position: absolute;
     margin-left: 2%;
-    font-size: 25px;
+    width:10%;
+    display: block;
 }
+.logo1 {
+  position: absolute;
+  margin-left: 2%;
+  width:10%;
+  display:none;
+}
+
 .material-icons{
     position: absolute;
     left:95% ;
@@ -186,6 +194,7 @@ background-color: none;
 font-size: 20px;
 border: #0d83ae4d;
 color: #023047;
+margin-top: 15px;
 margin-right: 25px;
 font-weight: bold;
 font-family: 'Work Sans', sans-serif;
@@ -306,6 +315,16 @@ font-weight: bold;
 
   /* ******************************responsive************************************* */
   @media screen and (max-width:1024px){
+
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    
+
+
  .border1{
    height: 450px;
  }
@@ -344,7 +363,43 @@ font-weight: bold;
   left:90%; 
  }
   }
+  @media screen and (max-width:890px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 150px;
+      font-size: 17px;
+    }
+    .btn2{
+     width: 150px;
+     font-size: 17px;
+    }
+    .btn{
+      top:40%
+    }
+    .previous{
+      font-size: 13px;
+      width: 90px;
+      right:  80%;
+     }
+     .next{
+      font-size: 13px;
+      width: 90px;
+      left: 80%;
+     }
+     .border1{top:15%;}
+  }
   @media screen and (max-width:768px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
 
   .btn1{
     width: 150px;
@@ -376,7 +431,139 @@ font-weight: bold;
     left:80%;
    }
   }
+  @media screen and (max-width:694px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 140px;
+      height: 50px;
+      font-size: 15px; 
+    }
+    .btn2{
+      width: 140px;
+      height: 50px;
+      font-size: 15px; 
+    }
+  }
+  @media screen and (max-width:655px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 130px;
+      height: 50px;
+      font-size: 15px; 
+    }
+    .btn2{
+      width: 130px;
+      height: 50px;
+      font-size: 15px; 
+    }
+  }
+  @media screen and (max-width:616px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 120px;
+      height: 50px;
+      font-size: 15px; 
+    }
+    .btn2{
+      width: 120px;
+      height: 50px;
+      font-size: 14px; 
+    } 
+  }
+  @media screen and (max-width:577px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 110px;
+      height: 50px;
+      font-size: 15px; 
+    }
+    .btn2{
+      width: 110px;
+      height: 50px;
+      font-size: 14px; 
+    } 
+    #sun{
+      left: 85%;
+    }
+    .previous{
+      right: 70%;
+    }
+    .next{
+      left: 70%;
+    }
+    #moon{
+      left: 85%;
+    }
+  }
+
+
+  
+  @media screen and (max-width:537px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 90px;
+      height: 50px;
+      font-size: 12px; 
+    }
+    .btn2{
+      width: 90px;
+      height: 50px;
+      font-size: 12px; 
+    } 
+
+  }
+  @media screen and (max-width:455px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
+    .btn1{
+      width: 80px;
+      height: 50px;
+      font-size: 12px; 
+    }
+    .btn2{
+      width: 80px;
+      height: 50px;
+      font-size: 11px; 
+    } 
+
+  }
+
   @media screen and (max-width:426px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
 
   .buttonload{
     font-size: 15px;
@@ -422,11 +609,20 @@ font-weight: bold;
   left:85%;
 
 }
+#moon{
+  left: 85%;
+}
 .border1{
   top:80px
 }
   }
   @media screen and  (max-width:376px){
+    .fcircle1{
+      clip-path: none;
+    }
+    .scircle1{
+      clip-path: none;
+    }
 
     .buttonload{
    font-size: 25px;
@@ -445,9 +641,18 @@ font-weight: bold;
    #sun{
      left:80%
    }
+   #moon{
+     left: 80%;
+   }
 }
 
 @media screen and  (max-width:317px){
+  .fcircle1{
+    clip-path: none;
+  }
+  .scircle1{
+    clip-path: none;
+  }
 
   .buttonload{
  font-size: 15px;

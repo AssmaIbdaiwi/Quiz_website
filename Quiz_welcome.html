@@ -17,19 +17,23 @@
 </head>
 
 <body>
-    <div class="fcircle1" id="fcircle1"> </div>
-    <div class="scircle1" id="scircle1"> </div>
-
+    <div class="cir1">
+        <div class="fcircle1" id="fcircle1"> </div>
+        <div class="scircle1" id="scircle1"> </div>
+    </div>
+   
     <div class="border1" id="border1">
         <div class="fcircle2" id="fcircle2"> </div>
         <div class="scircle2" id="scircle2"> </div>
         <div class="g1"><img src="pic/welcomegirl.gif" class="girl" id="girl"></div>
-        <p class="logo" id="logo">Logo</p>
+    
+        <img id="logo" class="logo" src="pic/WhatsApp_Image_2022-04-03_at_17.39.25-removebg-preview.png">
+        <img id="logo1" class="logo1" src="pic/WhatsApp_Image_2022-04-03_at_17.42.07-removebg-preview.png">
 
-
+        <div class="dark" onclick="sun">
         <i onclick="moon" class="fa fa-moon-o" id="moon" style="font-size: 36px"></i>
         <i onclick="sun" class="material-icons" id="sun" style="font-size: 36px">wb_sunny</i>
-
+        </div>
 
         <div class="border2" id="border2">
             <p class="yourname" id="yourname"><span> Welcome {name}</span> </p>
@@ -51,10 +55,11 @@
                 <option value="iq">IQ test</option>
                 <option value="tec">Technical test</option>
             </select>
+            <div class="startbtn" id="startbtn">
             <button class="startbtne" id="startbtne">START</button>
             <button class="startbtniq" id="startbtiq">START</button>
             <button class="startbtntec" id="startbtntec">START</button>
-
+        </div>
 
         </form>
 
@@ -78,7 +83,7 @@
                 You will be required to read each question carefully and select the answer that you think is correct. At
                 the end of the test, you will be given an estimation of your current level of English proficiency.</p>
         </div>
-        <div class="startbtn" id="startbtn"></div>
+       
 
     </div>
 
